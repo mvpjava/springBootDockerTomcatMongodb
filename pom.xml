@@ -73,7 +73,7 @@
                             <targetPath></targetPath>
                             <directory>${project.build.directory}</directory>
                             <include>${project.build.finalName}.war</include>
-                        </resource>
+                        </resource>                    
                     </resources>
                 </configuration>
             </plugin>
