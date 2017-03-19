@@ -58,7 +58,7 @@
                 <version>0.4.11</version>
                 <configuration>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <dockerDirectory>docker</dockerDirectory>
                     <dockerHost>http://172.17.0.1:2375</dockerHost>
                     
                     <!--overwrite tags every time image is built with docker:build -->
@@ -70,7 +70,7 @@
                                        
                     <resources>
                         <resource>
-                            <targetPath>/</targetPath>
+                            <targetPath></targetPath>
                             <directory>${project.build.directory}</directory>
                             <include>${project.build.finalName}.war</include>
                         </resource>
