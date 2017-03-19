@@ -1,0 +1,31 @@
+tomcatserver:
+    image: mvpjava/springboot_docker_tomcat_mongodb
+    container_name: tomcat
+    ports:
+        - 8080
+    hostname: tomcat
+    links:
+        - mongodb:mongo
+            
+mongodb:
+    image: mongo
+    container_name: mongo
+    ports:
+        - 27017
+    hostname: mongo
+    volumes:
+        - $HOME/mongo/data/db:/data/db
+        
+browser:
+    image: devurandom/firefox
+    container_name: firefox
+    links:
+        - tomcatserver:tomcat
+    hostname: firefox
+    environment:
+        - DISPLAY
+    volumes:
+        - /tmp/.X11-unix:/tmp/.X11-unix
+        - $HOME:/home
+    command:
+        - tomcat:8080/
