@@ -28,7 +28,7 @@ nb-configuration.xml
 
 .class
 *.jar
-#*.war
+*.war
 *.ear
 *.zip
 *.tar.gz

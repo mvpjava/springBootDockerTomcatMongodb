@@ -13,12 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class Main extends SpringBootServletInitializer {
 
     @Autowired
-    MongoLoggerService mongoLoggerSerive;
+    MongoService mongoLoggerSerive;
 
     @RequestMapping("/")
     public String home() {
         mongoLoggerSerive.logToMongo(new LogRecord("INFO", "New Home page hit"));
-        return "Spring Boot war deployment in Tomcat Docker Container successfull";
+        return "Spring Boot war deployment in Tomcat Docker Container successfull <P>" +
+                mongoLoggerSerive.getMongoDbInfo();
     }
 
     @RequestMapping("/hits")

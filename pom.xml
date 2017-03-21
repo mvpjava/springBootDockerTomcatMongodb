@@ -67,7 +67,10 @@
                         <imageTag>${project.version}</imageTag>
                         <imageTag>latest</imageTag>
                     </imageTags>
-                                       
+                    
+                    <!-- You should fo this in deploy phase or use -DskipDockerPush -->
+                    <serverId>docker-hub</serverId>
+                    <registryUrl>https://hub.docker.com/</registryUrl>      
                     <resources>
                         <resource>
                             <targetPath></targetPath>
