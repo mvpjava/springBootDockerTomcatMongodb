@@ -58,7 +58,7 @@
                 <version>0.4.11</version>
                 <configuration>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-                    <dockerDirectory>docker</dockerDirectory>
+                    <dockerDirectory>src/main/docker</dockerDirectory>
                     <dockerHost>http://172.17.0.1:2375</dockerHost>
                     
                     <!--overwrite tags every time image is built with docker:build -->

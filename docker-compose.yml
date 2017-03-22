@@ -27,5 +27,4 @@ browser:
     volumes:
         - /tmp/.X11-unix:/tmp/.X11-unix
         - $HOME:/home
-    command:
-        - tomcat:8080/
+    command: --new-instance tomcat:8080/ tomcat:8080/hits

@@ -1,5 +1,6 @@
 package com.mvpjava;
 
+import java.util.Date;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -17,6 +18,7 @@ public class MongoService {
     }
     
     public void logToMongo(LogRecord logRecord){
+        logRecord.setDate(new Date());
         mongoTemplate.save(logRecord, "logs");
     }
     
