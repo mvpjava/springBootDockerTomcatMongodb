@@ -20,6 +20,9 @@ https://www.youtube.com/c/MVPJava?sub_confirmation=1
 
 Follow me ...
 Website:  http://www.mvpjava.com 
+
 Google+ : http://bit.ly/1Jsnnfj 
+
 Facebook: https://www.facebook.com/mvpjava 
+
 Twitter : https://twitter.com/mvpjava
