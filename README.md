@@ -13,7 +13,7 @@ You can follow along by watching my YouTube Tutorial which goes through the enti
 "Deploy Spring Boot to Tomcat MongoDB Docker Containers"
 https://youtu.be/XojJV0A3cBw
 
-===============================================================================================
+===================================================
 
 Subscribe to MVP Java ...
 https://www.youtube.com/c/MVPJava?sub_confirmation=1
